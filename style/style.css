@@ -1,0 +1,502 @@
+@font-face{
+	font-family: "Truth";
+	src:url("../fonts/trud/Truth.ttf");
+   }
+@font-face{
+    font-family: "Oswald-Light";
+    src:url("../fonts/Oswald/Oswald-Light.ttf");
+}
+
+div{
+    box-sizing: border-box;
+}
+   
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 8fr 1fr;
+    background-color: #f2f2f2;
+   
+}
+
+header{
+    grid-area: header;
+    
+}
+
+.menu{
+    padding: 0;
+    font-size: 2vw;
+    font-family: "Truth";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.menu>li{
+    list-style: none;
+    border-bottom: solid 2px black;
+}
+
+main{
+    grid-area: main;
+    margin:auto 10vw;
+    background-color: #dbdbdb;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+#data1900{
+    
+}
+
+.title1900{
+    height: 13.5vw;
+    background-image: url('../image/1900_title.svg');
+    background-position: center center;
+    background-size: 85% auto;
+    background-repeat: no-repeat;
+    
+    
+}
+
+
+
+
+h1{
+    letter-spacing: 0.3vw;
+    font-size: 4vw;
+    font-family: "Truth";
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.titels_left_rigth{
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    width: 60%;
+    margin: 0 0 0 18% ;
+    padding: 3.4vw 0 0 0;
+}
+
+.titels_left_rigth>li{
+    list-style: none;
+    margin: 0;
+}
+
+
+h2{
+   
+    font-family: "Truth";
+    padding: 0;
+    font-size: 2.5vw;
+    text-align: center;
+   
+}
+
+h3{
+    font-family: "Truth";
+    padding: 0 2.5vw 0 3vw;
+    font-size: 3vw; 
+    text-align: center;
+}
+
+
+.content{
+    height: 27vw;
+    background-image: url('../image/longliine.svg');
+    background-position: center;
+    background-size: 5.2% auto;
+    background-repeat: no-repeat;
+    font-family: "Oswald-Light";
+}
+
+.centr{
+    text-align: center;
+    margin: 0;
+}
+
+.first_text{
+    position: absolute;
+    left: 17vw;
+    width: 30vw;
+    display: inline;
+    margin: 0;
+    font-size: 1.3vw;
+}
+
+.button_forNAseleniaMap{
+    position: absolute;
+    left: 7vw;
+    top: 21.5vw;
+    cursor: pointer;
+    height: 3vw;
+    width: 16vw;
+    background-color: #f15a24;
+    border:black solid 1.5px;
+    border-radius: 12px;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+}
+.button_forNAseleniaMap>p{
+    margin: 0.3vw 0 0 0;
+    text-align: center;
+}
+
+.button_forNAseleniaMap:hover{
+    box-shadow: 0 0 10px gray;
+}
+
+
+.second_text{
+    position: absolute;
+    left: 53vw;
+    width: 30vw;
+    display: inline;
+    margin: 0;
+    font-size: 1.3vw;
+}
+
+
+#data1914{
+
+}
+
+.title1914
+{
+    height: 11vw;
+    background-image: url('../image/1914_title_1.svg');
+    background-position: center center;
+    background-size: 85% auto;
+    background-repeat: no-repeat;
+    
+}
+
+.titels_left_rigth_defolt{
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    width: 68%;
+    margin: 0 16% ;
+    padding: 1vw 0 0 0;
+}
+
+.titels_left_rigth_defolt>li{
+    list-style: none;
+    margin: 0;
+}
+
+
+.titels_left_rigth_defolt>li>h2{
+   
+    font-family: "Truth";
+    padding: 0;
+    font-size: 1.7vw;
+    text-align: center;
+    padding: 1.5vw 0 0 0;
+}
+
+#data1917{
+
+}
+
+.title1917
+{
+    height: 11vw;
+    background-image: url('../image/1917_title.svg');
+    background-position: center center;
+    background-size: 85% auto;
+    background-repeat: no-repeat;
+    
+}
+
+
+#data1930{
+
+}
+
+.title1930
+{
+    height: 11vw;
+    background-image: url('../image/1930_title.svg');
+    background-position: center center;
+    background-size: 85% auto;
+    background-repeat: no-repeat;
+    
+}
+
+#data194145{
+
+}
+
+.title194145
+{
+    height: 11vw;
+    background-image: url('../image/1941_45_title.svg');
+    background-position: center center;
+    background-size: 85% auto;
+    background-repeat: no-repeat;
+    
+}
+
+
+#data1953{
+    
+
+}
+
+.title1953{
+    height: 11vw;
+    background-image: url('../image/1953_title.svg');
+    background-position: center center;
+    background-size: 85% auto;
+    background-repeat: no-repeat;
+}
+
+
+
+.for_fishMap{
+    background-image: url('../image/map_fon.png');
+    background-size: 90% auto;
+    background-position: center center;
+    height: 27vw;
+    background-repeat: no-repeat;
+
+
+}
+
+.button_fishMap{
+    position: absolute;
+    left: 7vw;
+    top: 10.5vw;
+    cursor: pointer;
+    height: 6vw;
+    width: 16vw;
+    background-color: #f15a24;
+    border:black solid 3px;
+    border-radius: 20px;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+}
+.button_fishMap:hover{
+    box-shadow: 0 0 50px gray;
+}
+
+.button_fishMap>p{
+    text-align: center;
+    margin: 0.8vw 0 0 0 ;
+}
+
+
+.text{
+    width: 28vw;
+    padding: 0 0 0 1.5vw;
+}
+
+
+
+.prev, .next {
+    
+    top:10vw;
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    color:black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  
+  
+  
+
+footer{
+    grid-area: footer;
+}
+
+
+/*model window for fish map*/
+
+.modelWindowFishMap{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    padding: 1.5vw 0 0 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll ;/* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.model_container_fishmap{
+    position: relative;
+    width: 80vw;
+    height: 45vw;
+    margin: auto;
+    padding: 0;
+    background-color:  #dbdbdb;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.close {
+    color: gray;
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 0 0 0 22vw;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main_fishmap{
+    display: grid;
+    grid-template-areas: 
+    "map item"
+    ;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.fishmap{
+    grid-area: map;
+}
+
+.map{
+    width: 45vw;
+}
+
+.items_fishmap{
+    grid-area: item;
+}
+.target{
+    position: absolute;
+    font-size: 2vw;
+    top:20vw;
+    left:20vw;
+}
+
+.modalWindowPopulation{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    padding: 3vw 0 0 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll ;/* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.modal_container_population{
+
+    position: relative;
+    width: 80vw;
+    height: 45vw;
+    margin: auto;
+    padding: 0;
+    background-color:  #dbdbdb;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.p_close {
+    color: gray;
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 0 0 0 77vw;
+}
+
+.p_close:hover,
+.p_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.st0{
+    
+    cursor: pointer;
+    width: 2vw;
+    height: 2vw;
+    background-color: rebeccapurple;
+}
+
+svg{
+    position:absolute;
+}
