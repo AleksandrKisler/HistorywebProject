@@ -644,21 +644,42 @@ padding: 1vw 0 0 8vw;
     align-items: center;
 }
 
- .select_items{
-   
- }
-
+ 
  .marker{
     margin: 0.3vw 0 0 0; 
     width: 3vw;
  }
 
 .select_body{
-    width: 80%;
+    width: 72%;
     margin: 0 auto;
-    height: 30vw;
+    height: 80vw;
+    font-family: "Oswald-Light";
+
 }
  
 
 
  
+.image_marker{
+    width: 2vw;
+   
+}
+
+
+.select_items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+
+.title{
+    text-transform: uppercase;
+    font-style: 1.5vw ;
+}
+
+body{
+    font-size: 1.3vw;
+}
