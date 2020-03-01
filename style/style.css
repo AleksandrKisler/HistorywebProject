@@ -1,7 +1,7 @@
   
   
   
-  @font-face{
+ @font-face{
 	font-family: "Truth";
 	src:url("../fonts/trud/Truth.ttf");
    }
@@ -33,6 +33,14 @@ header{
     
 }
 
+
+
+/*
+---------------------------------------------------------
+MENU
+---------------------------------------------------------
+*/
+
 .menu{
     padding: 0;
     font-size: 2vw;
@@ -60,6 +68,12 @@ main{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+/*
+---------------------------------------------------------
+H - загаловки
+---------------------------------------------------------
+*/
+
 h1{
     letter-spacing: 0.3vw;
     font-size: 4vw;
@@ -69,38 +83,12 @@ h1{
     padding: 0;
 }
 
-#data1900{
-    
-}
-
-.title1900{
-    height: 13.5vw;
-    background-image: url('../image/1900_title.svg');
-    background-position: center center;
-    background-size: 85% auto;
-    background-repeat: no-repeat;    
-}
-
-.title1900>.titels_left_rigth_defolt{
-    display: flex;
-    flex-direction: row;
-    justify-content:  space-between;
-    width: 64%;
-    margin: 0 16% ;
-    padding: 3.4vw 0 0 2VW;
-
-}
-
-
-
-
 h2{
    
     font-family: "Truth";
     padding: 0;
-    font-size: 1.7vw;
+    font-size: 2.5vw;
     text-align: center;
-    padding: 1.5vw 0 0 0;
    
 }
 
@@ -112,44 +100,317 @@ h3{
 }
 
 
-.content{
-    height: 27vw;
-    background-image: url('../image/longliine.svg');
-    background-position: center;
-    background-size: 5.2% auto;
-    background-repeat: no-repeat;
-    font-family: "Oswald-Light";
+/*
+---------------------------------------------------------
+MAIN - главный контейнер для контента
+---------------------------------------------------------
+*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.centr{
-    text-align: center;
-    margin: 0;
+/*
+---------------------------------------------------------
+SECTIONS AND DIV- БЛОКИ С КОНТЕНТОМ ТАЙМЛАЙНА
+---------------------------------------------------------
+*/
+
+
+#data1900{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .title{
+        width: 100%;
+        height: 11vw;
+        background-position: center center;
+        background-size: 85% auto;
+        background-repeat: no-repeat;
+        display: flex;
+        
+    }
+    .title1900{
+        background-image: url('../image/1900.svg');
+    }
+
+        .titels_left_rigth_defolt{
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content:  space-around;   
+            align-items: center; 
+            width: 90%;
+            margin: 0 auto;
+        }
+
+            .titels_left_rigth_defolt>li{
+                text-decoration: none;
+                list-style: none;
+                width: 18vw;       
+            }
+                .left{
+                    text-align: left !important;
+                }
+
+    .content{
+        width: 100%;
+        height: 27vw;
+        background-image: url('../image/longliine.svg');
+        background-position: center;
+        background-size: 5.2% auto;
+        background-repeat: no-repeat;
+        font-family: "Oswald-Light";
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+        
+        .left_sade.rigth_sade{
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+            .first_text{
+                margin: 0 0 0 2vw;
+                width: 28vw;
+                z-index: 1;
+                font-size: 1.3vw;
+            }
+
+            .second_text{
+                margin: 0 2vw 0 0;
+                width: 28vw;
+                
+                font-size: 1.3vw;
+            }
+                .centr{
+                    text-align: center;
+                    margin: 0;
+                }
+
+
+
+#data1914{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.first_text{
-    position: absolute;
-    left: 17vw;
-    width: 30vw;
-    display: inline;
-    margin: 0;
-    font-size: 1.3vw;
+    .title1914{
+        background-image: url('../image/1914_title_1.svg');
+    }
+
+#data1917{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+    .title1917
+    {
+        background-image: url('../image/1917_title.svg');    
+    }
+
+#data1930{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    
+    .title1930
+    {
+        background-image: url('../image/1930_title.svg');
+    }
+
+
+#data194145{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+    .title194145
+    {
+        background-image: url('../image/1941_45_title.svg'); 
+    }
+
+        .for_fishMap{
+            background-image: url('../image/map_fon.png');
+            background-size: 90% auto;
+            background-position: center center;
+            height: 27vw;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+#data1953{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+    
+    .title1953{
+        background-image: url('../image/1953_title.svg');
+    }
+    
+    
+    
+#data1991{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    }
+    
+      
+      .title1991{
+        background-image: url('../image/1991_title.svg');
+        }
+        
+    
+      
+      
+      
+    
+    footer{
+        grid-area: footer;
+    }
+    
+/*
+---------------------------------------------------------
+SLAIDER - верстка слайдеров
+---------------------------------------------------------
+*/
+
+.slider{
+    display: grid;
+    grid-template-areas: 
+    "back textc next"
+    "num num num"
+    ;
+    grid-template-rows: 16vw 1vw;
+    grid-template-columns: 1vw 28vw 1vw;
+    grid-gap: 0.5vw;
+}
+
+
+    .text{
+        width: 28vw;
+        grid-area: textc;
+    }
+    
+    
+    
+    .arrow {
+        padding: 8vw 0 0 0;
+        width: auto;
+        color:black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        
+      }
+      .next {
+        grid-area: next;
+        border-radius: 3px 0 0 3px;
+      }
+      .back {
+        grid-area: back;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      .arrow:hover {
+        background-color: rgba(187, 187, 187, 0.75);
+      }
+    
+      .dot {
+        grid-area: num;
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+    
+
+     
+/*
+---------------------------------------------------------
+IMG - стили для изображений
+---------------------------------------------------------
+*/
+
+.accp{
+    width: 15vw;
+    margin: 3vw 0 0 0;
+}
+
+.warimage{
+    width: 15vw;
+    padding: 0 0 0 1vw;
+    
+}
+
+
+.image img {
+padding: 1vw 0 0 8vw;
+ -moz-transition: all 1s ease-out;
+ -o-transition: all 1s ease-out;
+ -webkit-transition: all 1s ease-out;
+ }
+ 
+.image img:hover{
+ -webkit-transform: scale(2.1);
+ -moz-transform: scale(2.1);
+ -o-transform: scale(2.1);
+ }
+
+.start_img{
+    width: 3.9vw;
+    margin: 0 auto;
+}
+
+
+/*
+---------------------------------------------------------
+BUTTON - кнопки для вызова диологовых окн
+---------------------------------------------------------
+*/
 
 .button_forNAseleniaMap{
-    position: absolute;
-    left: 7vw;
-    top: 21.5vw;
+    width: 60%;
+    margin: 1vw auto;
     cursor: pointer;
-    height: 3vw;
-    width: 16vw;
+    padding: 0.1vw;
     background-color: #f15a24;
     border:black solid 1.5px;
     border-radius: 12px;
     font-size: 1.3vw;
     text-transform: uppercase;
-}
-.button_forNAseleniaMap>p{
-    margin: 0.3vw 0 0 0;
     text-align: center;
 }
 
@@ -158,118 +419,31 @@ h3{
 }
 
 
-.second_text{
-    position: absolute;
-    left: 53vw;
-    width: 30vw;
-    display: inline;
-    margin: 0;
-    font-size: 1.3vw;
-}
-
-
-#data1914{
-
-}
-
-.title1914
-{
-    height: 11vw;
-    background-image: url('../image/1914_title_1.svg');
-    background-position: center center;
-    background-size: 85% auto;
-    background-repeat: no-repeat;
-    
-}
-
-.titels_left_rigth_defolt{
-    display: flex;
-    flex-direction: row;
-    justify-content:  space-between;
-    width: 68%;
-    margin: 0 16% ;
-    padding: 1vw 0 0 0;
-}
-
-.titels_left_rigth_defolt>li{
-    list-style: none;
-    margin: 0;
-}
-
-
-.titels_left_rigth_defolt>li>h2{
-   
-    font-family: "Truth";
-    padding: 0;
-    font-size: 1.7vw;
+.button_forBook{
+    width: 60%;
+    margin: 1vw auto;
+    padding: 0 0.2vw;
+    cursor: pointer;
+    padding: 0.3vw;
+    background-color: #f15a24;
+    border:black solid 1.5px;
+    border-radius: 12px;
+    font-size: 1vw;
+    text-transform: uppercase;
     text-align: center;
-    padding: 1.5vw 0 0 0;
 }
-
-#data1917{
-
-}
-/*#data1917>.content>.first_text{
-    padding: 10vw 0 0 0;
-}*/
-
-.title1917
-{
-    height: 11vw;
-    background-image: url('../image/1917_title.svg');
-    background-position: center center;
-    background-size: 85% auto;
-    background-repeat: no-repeat;
+.button_forBook>p{
     
+    text-align: center;
 }
 
-
-#data1930{
-
-}
-
-.title1930
-{
-    height: 11vw;
-    background-image: url('../image/1930_title.svg');
-    background-position: center center;
-    background-size: 85% auto;
-    background-repeat: no-repeat;
-    
-}
-
-#data194145{
-
-}
-
-.title194145
-{
-    height: 11vw;
-    background-image: url('../image/1941_45_title.svg');
-    background-position: center center;
-    background-size: 85% auto;
-    background-repeat: no-repeat;
-    
+.button_forBook:hover{
+    box-shadow: 0 0 10px gray;
 }
 
 
 
-
-
-.for_fishMap{
-    background-image: url('../image/map_fon.png');
-    background-size: 90% auto;
-    background-position: center center;
-    height: 27vw;
-    background-repeat: no-repeat;
-
-
-}
-
-.button_fishMap{
-    position: absolute;
-    left: 7vw;
-    top: 10.5vw;
+.button_fishMap{ 
     cursor: pointer;
     height: 6vw;
     width: 16vw;
@@ -289,155 +463,14 @@ h3{
 }
 
 
-.text{
-    width: 28vw;
-    padding: 0 0 0 1.5vw;
-}
 
 
+/*
+---------------------------------------------------------
+MODAL WINDOWS - диологовые окна
+---------------------------------------------------------
+*/
 
-.prev, .next {
-    
-    top:10vw;
-    cursor: pointer;
-    position: absolute;
-    width: auto;
-    color:black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(187, 187, 187, 0.75);
-  }
-
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-
-  .text_1{
-    width: 28vw;
-    padding: 0 0 0 1.5vw;
-}
-
-
-
-.prev_1, .next_1 {
-    
-    top:10vw;
-    cursor: pointer;
-    position: absolute;
-    width: auto;
-    color:black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  .next_1 {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(187, 187, 187, 0.75);
-  }
-
-  .dot_1 {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot_1:hover {
-    background-color: #717171;
-  }
-
-  #data1953{
-    
-
-    }
-
-.title1953{
-    height: 11vw;
-    background-image: url('../image/1953_title.svg');
-    background-position: center center;
-    background-size: 85% auto;
-    background-repeat: no-repeat;
-}
-
-.title1953>.titels_left_rigth_defolt>li>h2{
-    font-family: "Truth";
-    padding: 1.7vw 0 0 0;
-    font-size: 1.5vw;
-    text-align: center;
-}
-
-#data1956{
-    
-
-}
-
-  
-  .title1956{
-    height: 11vw;
-    background-image: url('../image/1956_title.svg');
-    background-position: center center;
-    background-size: 85% auto;
-    background-repeat: no-repeat;
-}
-
-#data1991{
-    
-
-}
-
-  
-  .title1991{
-    height: 11vw;
-    background-image: url('../image/1991_title.svg');
-    background-position: center center;
-    background-size: 85% auto;
-    background-repeat: no-repeat;
-}
-    
-
-  
-  
-  
-
-footer{
-    grid-area: footer;
-}
-
-
-/*model window for fish map*/
 
 .modelWindowFishMap{
     display: none;
@@ -561,6 +594,48 @@ footer{
 }
 
 
+
+.modalBook{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    padding: 3vw 0 0 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll ;/* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.modalBook_modal{
+
+    position: relative;
+    width: 80vw;
+    height: 45vw;
+    margin: auto;
+    padding: 0;
+    background-color:  #dbdbdb;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
 .p_close {
     color: gray;
     font-size: 3vw;
@@ -575,6 +650,13 @@ footer{
     cursor: pointer;
 }
 
+
+
+
+
+
+
+
 .st0{
     
     cursor: pointer;
@@ -587,33 +669,6 @@ svg{
     position:absolute;
 }
 
-
-
-/* ----------
-
-IMAGE CLASS
-
---------- */
-
-.warimage{
-    width: 15vw;
-    padding: 0 0 0 1vw;
-    
-}
-
-
-.image img {
-padding: 1vw 0 0 8vw;
- -moz-transition: all 1s ease-out;
- -o-transition: all 1s ease-out;
- -webkit-transition: all 1s ease-out;
- }
- 
-.image img:hover{
- -webkit-transform: scale(2.1);
- -moz-transform: scale(2.1);
- -o-transform: scale(2.1);
- }
 
 /*
 спецконтенгент верстка
@@ -674,12 +729,3 @@ padding: 1vw 0 0 8vw;
 
 }
 
-
-.title{
-    text-transform: uppercase;
-    font-style: 1.5vw ;
-}
-
-body{
-    font-size: 1.3vw;
-}

@@ -65,3 +65,23 @@ function closePopulationMap(){
 function s(){
   console.log(1);
 }
+
+
+
+/*modal window for Book*/
+
+var ModelButton_b =document.getElementsByClassName("button_forBook");
+var ModelWindow_b = document.getElementById("myModal1");
+var close_h=document.getElementsByClassName("p_close");
+
+function openWindowBook(){
+    ModelWindow_b.style.display="block";
+}
+
+function closeBook(){
+  ModelWindow_b.style.display="none";
+}
+
+function s(){
+  console.log(1);
+}
