@@ -95,7 +95,7 @@ h2{
 h3{
     font-family: "Truth";
     padding: 0 2.5vw 0 3vw;
-    font-size: 3vw; 
+    font-size: 1.5vw; 
     text-align: center;
 }
 
@@ -159,8 +159,8 @@ SECTIONS AND DIV- БЛОКИ С КОНТЕНТОМ ТАЙМЛАЙНА
 
     .content{
         width: 100%;
-        height: 27vw;
-        background-image: url('../image/longliine.svg');
+        height: 29vw;
+        background-image: url('../image/longline.svg');
         background-position: center;
         background-size: 5.2% auto;
         background-repeat: no-repeat;
@@ -233,6 +233,10 @@ SECTIONS AND DIV- БЛОКИ С КОНТЕНТОМ ТАЙМЛАЙНА
         background-image: url('../image/1930_title.svg');
     }
 
+    #data1930>.content{
+        background-image: url('../image/twoinone.svg');
+    }
+
 
 #data194145{
     width: 100%;
@@ -257,6 +261,17 @@ SECTIONS AND DIV- БЛОКИ С КОНТЕНТОМ ТАЙМЛАЙНА
             justify-content: center;
         }
 
+    #data194145>.content{
+        background-image: url('../image/lsingl_logline.svg');
+        background-size: 2.2% auto;
+    }
+
+    iframe{
+        width: 30vw;
+        height: 17vw;
+        border: solid 5px #999999;
+    }
+
 #data1953{
     width: 100%;
     display: flex;
@@ -268,6 +283,11 @@ SECTIONS AND DIV- БЛОКИ С КОНТЕНТОМ ТАЙМЛАЙНА
         background-image: url('../image/1953_title.svg');
     }
     
+    #data1953>.content{
+        background-image: url('../image/longlongline_1.svg');
+        background-size: 2.2% auto;
+        height: 44.7vw;
+    }
     
     
 #data1991{
@@ -280,8 +300,12 @@ SECTIONS AND DIV- БЛОКИ С КОНТЕНТОМ ТАЙМЛАЙНА
       
       .title1991{
         background-image: url('../image/1991_title.svg');
+        
         }
         
+    #data1991>.content{
+        background-image: url('../image/twoinone_revers.svg');
+    }
     
       
       
@@ -303,10 +327,11 @@ SLAIDER - верстка слайдеров
     "back textc next"
     "num num num"
     ;
-    grid-template-rows: 16vw 1vw;
+    grid-template-rows: 24vw 1vw;
     grid-template-columns: 1vw 28vw 1vw;
     grid-gap: 0.5vw;
 }
+
 
 
     .text{
@@ -316,8 +341,10 @@ SLAIDER - верстка слайдеров
     
     
     
+    
+    
     .arrow {
-        padding: 8vw 0 0 0;
+        padding: 11vw 0 0 0;
         width: auto;
         color:black;
         font-weight: bold;
@@ -335,6 +362,7 @@ SLAIDER - верстка слайдеров
         grid-area: back;
         border-radius: 3px 0 0 3px;
       }
+     
       
       .arrow:hover {
         background-color: rgba(187, 187, 187, 0.75);
@@ -355,14 +383,85 @@ SLAIDER - верстка слайдеров
       .active, .dot:hover {
         background-color: #717171;
       }
-    
 
+
+.slider_1{
+        display: grid;
+        grid-template-areas: 
+        "back textc next"
+        "num num num"
+        ;
+        grid-template-rows: 18vw 1vw;
+        grid-template-columns: 1vw 28vw 1vw;
+        grid-gap: 0.5vw;
+    }
+      .text_1{
+        width: 28vw;
+        grid-area: textc;
+        }
+      .next_1 {
+        grid-area: next;
+        border-radius: 3px 0 0 3px;
+      }
+      .back_1 {
+        grid-area: back;
+        border-radius: 3px 0 0 3px;
+      }
+
+      .dot_1 {
+        grid-area: num;
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot_1:hover {
+        background-color: #717171;
+      }
+
+      .text_2{
+        width: 28vw;
+        grid-area: textc;
+        }
+      .next_2 {
+        grid-area: next;
+        border-radius: 3px 0 0 3px;
+      }
+      .back_2 {
+        grid-area: back;
+        border-radius: 3px 0 0 3px;
+      }
+
+      .dot_2 {
+        grid-area: num;
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot_2:hover {
+        background-color: #717171;
+      }
      
 /*
 ---------------------------------------------------------
 IMG - стили для изображений
 ---------------------------------------------------------
 */
+
+.map_image{
+    width: 35vw;
+}
 
 .accp{
     width: 15vw;
@@ -402,14 +501,15 @@ BUTTON - кнопки для вызова диологовых окн
 */
 
 .button_forNAseleniaMap{
+    z-index: 10;
     width: 60%;
     margin: 1vw auto;
+    padding: 0.2vw 0.2vw;
     cursor: pointer;
-    padding: 0.1vw;
     background-color: #f15a24;
     border:black solid 1.5px;
     border-radius: 12px;
-    font-size: 1.3vw;
+    font-size: 1vw;
     text-transform: uppercase;
     text-align: center;
 }
@@ -421,10 +521,9 @@ BUTTON - кнопки для вызова диологовых окн
 
 .button_forBook{
     width: 60%;
-    margin: 1vw auto;
-    padding: 0 0.2vw;
+    margin: 2.8vw auto;
+    padding: 0.2vw 0.2vw;
     cursor: pointer;
-    padding: 0.3vw;
     background-color: #f15a24;
     border:black solid 1.5px;
     border-radius: 12px;
@@ -445,13 +544,15 @@ BUTTON - кнопки для вызова диологовых окн
 
 .button_fishMap{ 
     cursor: pointer;
-    height: 6vw;
-    width: 16vw;
+    width: 60%;
+    padding: 1vw 0;
+    margin: 3vw auto 0 auto;
     background-color: #f15a24;
     border:black solid 3px;
     border-radius: 20px;
     font-size: 1.3vw;
     text-transform: uppercase;
+    text-align: center;
 }
 .button_fishMap:hover{
     box-shadow: 0 0 50px gray;
@@ -571,7 +672,7 @@ MODAL WINDOWS - диологовые окна
 
     position: relative;
     width: 80vw;
-    height: 45vw;
+    height: 40vw;
     margin: auto;
     padding: 0;
     background-color:  #dbdbdb;
@@ -593,6 +694,12 @@ MODAL WINDOWS - диологовые окна
     to {top:0; opacity:1}
 }
 
+.main_population{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
 
 
 .modalBook{
@@ -601,7 +708,7 @@ MODAL WINDOWS - диологовые окна
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    padding: 3vw 0 0 0;
+    padding: 0 0 0 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: scroll ;/* Enable scroll if needed */
@@ -610,10 +717,10 @@ MODAL WINDOWS - диологовые окна
 }
 
 .modalBook_modal{
-
+    font-family: "Oswald-Light";
+    font-size: 1.1vw;
     position: relative;
     width: 80vw;
-    height: 45vw;
     margin: auto;
     padding: 0;
     background-color:  #dbdbdb;
@@ -624,6 +731,15 @@ MODAL WINDOWS - диологовые окна
     animation-duration: 0.4s
 }
 
+.main_book{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.footer_book{
+    height: 3vw;
+}
 
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
