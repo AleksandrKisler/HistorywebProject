@@ -475,24 +475,12 @@ IMG - стили для изображений
 }
 
 .warimage{
-    width: 15vw;
-    padding: 0 0 0 1vw;
+    margin: 2vw 0 0 0;
+    width: 25vw;
     
 }
 
 
-.image img {
-padding: 1vw 0 0 8vw;
- -moz-transition: all 1s ease-out;
- -o-transition: all 1s ease-out;
- -webkit-transition: all 1s ease-out;
- }
- 
-.image img:hover{
- -webkit-transform: scale(2.1);
- -moz-transform: scale(2.1);
- -o-transform: scale(2.1);
- }
 
 .start_img{
     width: 3.9vw;
