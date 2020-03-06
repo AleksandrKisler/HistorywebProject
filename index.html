@@ -7,23 +7,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HISTORY</title>
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/animate.css">
 </head>
 
 <body>
   <header>
-    <ul class="menu">
+    <ul class="menu wow fadeIn">
       <li><a href="index.html">ИСТОРИЯ</a></li>
       <li><a href="pags/specl.html">СПЕЦКОНТИНГЕНТ</a></li>
       <li><a href="#">ПОВСЕДНЕВНОСТЬ</a></li>
       <li><a href="#">КОНТАКТЫ</a></li>
     </ul>
   </header>
-  <main>
-    <section id="data1900">
+  <main class="wow fadeIn">
+    <section id="data1900" class="wow fadeIn">
       <h1>История</h1>
-      <img src="image/start.svg" class="start_img">
+      <img src="image/start.svg" class="start_img wow fadeIn" data-wow-delay="0.2s">
       <div class="title title1900">
-        <ul class="titels_left_rigth_defolt">
+        <ul class="titels_left_rigth_defolt wow fadeIn" data-wow-delay="0.3s" data-wow-duration="4s">
           <li>
             <h2>НЕМЦЫ В РОССИИ<br></h2>
           </li>
@@ -32,7 +33,7 @@
           </li>
         </ul>
       </div>
-      <div class="content">
+      <div class="content wow fadeIn" data-wow-delay="0.5s">
         <div class="left_sade">
           <div class="first_text">
             По данным переписи населения 1897 года, в Российской империи
@@ -67,9 +68,9 @@
         </div>
       </div>
     </section>
-    <section id="data1914">
+    <section id="data1914" class="wow fadeIn" data-wow-offset="250">
       <div class="title title1914">
-        <ul class="titels_left_rigth_defolt">
+        <ul class="titels_left_rigth_defolt wow fadeIn" data-wow-delay="0.2s">
           <li>
             <h2>ПЕРВАЯ </h2>
           </li>
@@ -78,7 +79,7 @@
           </li>
         </ul>
       </div>
-      <div class="content">
+      <div class="content wow fadeIn" data-wow-delay="0.5s">
         <div class="first_text">
           Вступление Российской империи в Первую мировую войну против
           Германии и ее союзников привело к усилению антинемецких настроений
@@ -88,6 +89,7 @@
           на родном языке. На западных прифронтовых территориях немцы были лишены
           своих землевладений, а затем было
           принято решение об их выселении в центральные районы страны.
+          <p class="centr"><img src="image/kaska_1.png" class="kaska"></p>  
         </div>
         <div class="second_text">
           1 августа 1914 года Российская империя вступила в Первую мировую войну на стороне «Антанты». Около 2.000
@@ -95,12 +97,12 @@
           фронт. Однако война не внесла в стабильную жизнь северян каких-либо серьезных изменений. Для России война
           закончилась 3 марта 1918 года после подписания сепаратного мирного договора с Германией в Брест-Литовске. <br>
           <div class="image">
-            <img src="image/gun1.png" class="warimage">
+            <img src="image/gun1_1.png" class="warimage">
           </div>
         </div>
       </div>
     </section>
-    <section id="data1917">
+    <section id="data1917" class="wow fadeIn">
       <div class="title title1917">
         <ul class="titels_left_rigth_defolt">
           <li>
@@ -111,10 +113,8 @@
           </li>
         </ul>
       </div>
-      <div class="content">
-
+      <div class="content wow fadeIn" data-wow-delay="0.5s" > 
         <div class="first_text">
-
           19 октября 1918 года декретом Совета народных комиссаров РСФСР
           из части территорий Саратовской и Самарской губерний была
           образована первая в стране автономная область — автономная область
@@ -135,7 +135,6 @@
           был установлен в качестве<br> второго языка делопроизводства и как
           язык обучения <br> в школах.Этнические немцы составляли около 65% населения.
           <br>
-          <p class="centr"><img src="image/accp.png" alt="" class="accp"></p>
         </div>
 
         <div class="second_text">
@@ -148,8 +147,8 @@
         </div>
       </div>
     </section>
-    <section id="data1930">
-      <div class="title1930 title">
+    <section id="data1930" class="plusbackground wow fadeIn">
+      <div class="title1930 title wow fadeInRight" data-wow-duration="2s">
         <ul class="titels_left_rigth_defolt">
           <li>
             <h2></h2>
@@ -159,9 +158,9 @@
           </li>
         </ul>
       </div>
-      <div class="content">
+      <div class="content wow fadeIn" data-wow-delay="0.5s">
         <div class="first_text">
-
+          <p class="centr"><img src="image/accp.png" alt="" class="accp"></p>
         </div>
         <div class="second_text">
           После установления советской власти перед регионом
@@ -313,7 +312,7 @@
             </div>
           </div>
           <div class="graphics">
-            <img src="image/population_4.png" alt="" class="graphics_image">
+            <img src="image/population_5.png" alt="" class="graphics_image">
           </div>
 
         </div>
@@ -508,5 +507,8 @@
   </div>
 </body>
 <script type="text/javascript" src="scripts/js.js"></script>
-
+<script src="scripts/wow.js"></script>
+<script>
+new WOW().init();
+</script>
 </html>

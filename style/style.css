@@ -184,6 +184,15 @@ SECTIONS AND DIV- БЛОКИ С КОНТЕНТОМ ТАЙМЛАЙНА
                 font-size: 1.3vw;
             }
 
+            .plusbackground{
+                background-image: url('../image/soviet.png');
+                background-position: left 28% top 20%;
+                background-size: 35% auto;
+                background-repeat: no-repeat;
+                
+                
+            }
+
             .second_text{
                 margin: 0 2vw 0 0;
                 width: 28vw;
@@ -230,7 +239,7 @@ SECTIONS AND DIV- БЛОКИ С КОНТЕНТОМ ТАЙМЛАЙНА
     
     .title1930
     {
-        background-image: url('../image/1930_title.svg');
+        background-image: url('../image/1930.svg');
     }
 
     #data1930>.content{
@@ -464,13 +473,18 @@ IMG - стили для изображений
     
 }
 
+.kaska{
+    width: 20vw;
+    margin: 2vw 0 0 0;
+}
 
 .map_image{
     width: 35vw;
 }
 
 .accp{
-    width: 20vw;
+    opacity: 0.8;
+    width: 25vw;
     margin: 3vw 0 0 0;
 }
 

@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1155.65 180"><defs><style>.cls-1{fill:#333;}.cls-2{fill:#999;}.cls-3{fill:#dbdbdb;}.cls-4{isolation:isolate;font-size:120px;fill:#f15a24;font-family:NiagaraEngraved-Reg, Niagara Engraved;}</style></defs><title>1930_title</title><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><g id="Слой_1-2-2" data-name="Слой 1-2"><g id="Слой_2-2" data-name="Слой 2"><g id="Слой_1-2-3" data-name="Слой 1-2"><circle class="cls-1" cx="577.83" cy="90" r="90"/><path class="cls-2" d="M659.15,39.07c4.51,4.43,14.59,22.08,15,49,.43,28.18-11.69,47.77-16,52l497.5-.29-89-50,89-50Z"/><path class="cls-3" d="M496.5,140.07c-4.51-4.43-14.59-22.08-15-49-.43-28.18,11.7-47.77,16-52L0,39.36l89,50-89,50Z"/><text class="cls-4" transform="translate(514.78 129.25)">1930</text></g></g></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1155.7 180" style="enable-background:new 0 0 1155.7 180;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#999999;}
+	.st1{opacity:0;fill:#DBDBDB;}
+	.st2{fill:#333333;}
+	.st3{fill:#F15A24;}
+	.st4{font-family:'NiagaraEngraved-Reg';}
+	.st5{font-size:120px;}
+</style>
+<g>
+	<path class="st0" d="M659.2,39.1c4.5,4.4,14.6,22.1,15,49c0.4,28.2-11.7,47.8-16,52l497.5-0.3l-89-50l89-50L659.2,39.1z"/>
+	<path class="st1" d="M496.5,140.1c-4.5-4.4-14.6-22.1-15-49c-0.4-28.2,11.7-47.8,16-52L0,39.4l89,50l-89,50L496.5,140.1z"/>
+	<g>
+		<circle class="st2" cx="577.8" cy="90" r="90"/>
+		<text transform="matrix(1 0 0 1 514.78 129.25)" class="st3 st4 st5">1930</text>
+	</g>
+</g>
+</svg>
