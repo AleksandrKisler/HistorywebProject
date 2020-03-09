@@ -25,13 +25,14 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: 6vw 8fr 6vw;
     background-color: #f2f2f2;
+    
    
 }
 
 header{
     grid-area: header;
     margin:auto 10vw;
-    
+    color: #292929;
 }
 
 
@@ -93,10 +94,11 @@ h1{
     text-align: center;
     margin: 1vw 0;
     padding: 0;
+    color: #292929;
 }
 
 h2{
-   
+    color: #292929;
     font-family: "Truth";
     padding: 0;
     font-size: 2.5vw;
@@ -506,6 +508,12 @@ IMG - стили для изображений
 
 .map_image{
     width: 35vw;
+    transition: 2s;
+}
+
+.map_image:hover{
+    transform: scale(1.5);
+   
 }
 
 .accp{
@@ -611,141 +619,11 @@ MODAL WINDOWS - диологовые окна
 */
 
 
-.modelWindowFishMap{
+
+.modal{
     display: none;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    padding: 1.5vw 0 0 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: scroll ;/* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
-}
-
-.model_container_fishmap{
-    position: relative;
-    width: 80vw;
-    height: 45vw;
-    margin: auto;
-    padding: 0;
-    background-color:  #dbdbdb;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
-
-
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-
-.close {
-    color: gray;
-    font-size: 3vw;
-    font-weight: bold;
-    margin: 0 0 0 22vw;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.main_fishmap{
-    display: grid;
-    grid-template-areas: 
-    "map item"
-    ;
-    grid-template-columns: 4fr 2fr;
-    grid-template-rows: 1fr;
-}
-
-.fishmap{
-    grid-area: map;
-}
-
-.map{
-    width: 45vw;
-}
-
-.items_fishmap{
-    grid-area: item;
-}
-.target{
-    position: absolute;
-    font-size: 2vw;
-    top:20vw;
-    left:20vw;
-}
-
-.modalWindowPopulation{
-    display: none;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    padding: 3vw 0 0 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: scroll ;/* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
-}
-
-.modal_container_population{
-
-    position: relative;
-    width: 80vw;
-    height: 40vw;
-    margin: auto;
-    padding: 0;
-    background-color:  #dbdbdb;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
-
-
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-.main_population{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-
-
-.modalBook{
-    display: none;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
+    z-index: 100; /* Sit on top */
     padding: 0 0 0 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
@@ -754,14 +632,19 @@ MODAL WINDOWS - диологовые окна
     background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
 }
 
-.modalBook_modal{
+.modalWindow{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     font-family: "Oswald-Light";
     font-size: 1.1vw;
     position: relative;
     width: 80vw;
-    margin: auto;
+    margin:3vw auto;
     padding: 0;
     background-color:  #dbdbdb;
+    background-image: url(../image/textured_paper.png);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -769,15 +652,78 @@ MODAL WINDOWS - диологовые окна
     animation-duration: 0.4s
 }
 
-.main_book{
-    width: 80%;
-    margin: 0 auto;
-    
+.modalHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer_book{
-    height: 3vw;
+.modalMain{
+    width: 80%;
+    margin: 0 auto 2vw auto; 
+    font-size: 1.3vw;
+    text-align: left;
 }
+
+.modalFooter{
+    margin: 4vw 0;
+}
+
+.modelWindowForPageClose {
+    position: absolute;
+    color: gray;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 0 0 0 10vw;
+    right: 1vw;
+    top: 0;
+   
+}
+
+.modelWindowForPageClose:hover,
+.modelWindowForPageClose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modelWindowForFishMapClose {
+    position: absolute;
+    color: gray;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 0 0 0 10vw;
+    right: 1vw;
+    top: 0;
+   
+}
+
+.modelWindowForFishMapClose:hover,
+.modelWindowForFishMapClose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modelWindowForPopulationMapClose {
+    position: absolute;
+    color: gray;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 0 0 0 10vw;
+    right: 1vw;
+    top: 0;
+   
+}
+
+.modelWindowForPopulationMapClose:hover,
+.modelWindowForPopulationMapClose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
@@ -790,23 +736,12 @@ MODAL WINDOWS - диологовые окна
 }
 
 
-.p_close {
-    color: gray;
-    font-size: 3vw;
-    font-weight: bold;
-    margin: 0 0 0 77vw;
+.boxForPopulatuonMap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-
-.p_close:hover,
-.p_close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-
-
 
 
 
