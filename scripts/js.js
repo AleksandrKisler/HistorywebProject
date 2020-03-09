@@ -21,10 +21,13 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
+
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace("active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  
+  slides[slideIndex-1].style.display = "block"; 
+  slides[slideIndex-1].className += " animated fadeIn";
   dots[slideIndex-1].className += " active";
 }
 
@@ -60,7 +63,8 @@ function showSlides_1(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace("active", "");
   }
-  slides[slideIndex_1-1].style.display = "block";  
+  slides[slideIndex_1-1].style.display = "block";
+  slides[slideIndex_1-1].className += " animated fadeIn";  
   dots[slideIndex_1-1].className += " active";
 }
 
@@ -90,7 +94,8 @@ function showSlides_2(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace("active", "");
   }
-  slides[slideIndex_2-1].style.display = "block";  
+  slides[slideIndex_2-1].style.display = "block";
+  slides[slideIndex_2-1].className += " animated fadeIn";   
   dots[slideIndex_2-1].className += " active";
 }
 
@@ -151,4 +156,10 @@ function closeBook(){
 
 function s(){
   console.log(1);
+}
+
+
+
+function selectVidioBox(){
+  console.log("hello");
 }

@@ -30,6 +30,7 @@ body{
 
 header{
     grid-area: header;
+    margin:auto 10vw;
     
 }
 
@@ -48,6 +49,7 @@ MENU
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 
 }
 
@@ -59,12 +61,22 @@ MENU
 .menu>li>a{
     text-decoration: none;
     color: #717171;
+    
+    transition: 0.5s;
+}
+.active-menu-item{
+    text-shadow: -2px 3px 1px #717171;
+}
+
+.menu>li>a:hover{
+    text-shadow: -2px 3px 1px #717171;
 }
 
 main{
     grid-area: main;
     margin:auto 10vw;
     background-color: #dbdbdb;
+    background-image: url(../image/textured_paper.png);
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
@@ -79,7 +91,7 @@ h1{
     font-size: 4vw;
     font-family: "Truth";
     text-align: center;
-    margin: 0;
+    margin: 1vw 0;
     padding: 0;
 }
 
@@ -270,15 +282,23 @@ SECTIONS AND DIV- БЛОКИ С КОНТЕНТОМ ТАЙМЛАЙНА
             justify-content: center;
         }
 
-    #data194145>.content{
-        background-image: url('../image/lsingl_logline.svg');
-        background-size: 2.2% auto;
-    }
+        #data194145>.content{
+            background-image: url('../image/lsingl_logline.svg');
+            background-size: 2.2% auto;
+        }
+
+        .fishimg{
+            background-image: url(../image/fish.png);
+            background-repeat: no-repeat;
+            background-position: 20% 65%;
+            background-size: 20% auto;
+        }
 
     iframe{
-        width: 30vw;
-        height: 17vw;
-        border: solid 5px #999999;
+        width: 27vw;
+        height: 15vw;
+        border: solid 15px #999999;
+        border-radius: 25px;
     }
 
 #data1953{
@@ -470,7 +490,10 @@ IMG - стили для изображений
 
 .graphics_image{
     width: 30VW;
-    
+    transition: 2s;
+}
+.graphics_image:hover{
+    transform: scale(2);
 }
 
 .kaska{
@@ -837,8 +860,6 @@ svg{
 
 }
  
-
-
  
 .image_marker{
     width: 2vw;
