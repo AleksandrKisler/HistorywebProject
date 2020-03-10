@@ -940,3 +940,110 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
                         transform: scale(1.3);
                     }
 
+#nastroenie{
+    background-image: url(../image/nastroenie_3.svg);
+    background-size: 47% auto;
+    background-repeat: no-repeat;
+    background-position: 5% 0.6vw;
+    height: 100%;
+    width: 100%;
+    font-family: "Oswald-Light";
+    font-size: 1.3vw;
+    margin: 2vw 0 0 0;
+    padding: 0 0 8vw 0;
+}
+    .h6Tongue{
+        margin: 0vw 0 2vw -6.5vw ;
+                color: #797979;
+                font-family: "Truth";
+                padding: 0;
+                font-size: 3vw;
+                text-align: left;
+    }
+
+        .spravka{
+            z-index: 100;
+            font-family: 'Bad Script', cursive;
+            font-size: 1vw;
+            background-image: url(../image/paper1.jpg);
+            margin: 0 0 0 27vw;
+            padding: 2vw;
+            width: 50vw;
+            height: 30vw;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .spravkaHeader{
+            height: 2.5vw;
+        }
+
+            h6{
+                color: #292929;
+                font-family: "Truth";
+                padding: 0;
+                margin: 0;
+                font-size: 2vw;
+                text-align: center;
+            }
+
+
+        .spravkaMain{
+            height: 23vw;
+        }
+
+        .spravkaFooter{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 3vw;
+        }
+
+
+        .openspravka{
+            display: none;
+            height: 50vw;
+        }
+
+            .arrow_down{
+                width: 2vw;
+                transition: 1s;
+                
+            }
+
+            .arrow_down:hover{
+                transform: scale(1.3);
+            }
+
+            .arrow_up{
+                display: none;
+                width: 2vw;
+                transition: 1s;
+            }
+
+            .arrow_up:hover{
+                transform: scale(1.3);
+            }
+        
+    .leftText{
+        width: 60%;
+        margin: 2vw auto;
+    }
+
+    .spravka1{
+        z-index: 100;
+        font-family: 'Bad Script', cursive;
+        font-size: 1vw;
+        background-image: url(../image/paper1.jpg);
+        margin: 0 0 0 27vw;
+        padding: 2vw;
+        width: 50vw;
+        height: 20vw;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+       
+        
+
+    }
