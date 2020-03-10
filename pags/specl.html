@@ -4,26 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HISTORY</title>
+    <title>SPECKONTENGENT</title>
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/animate.css">
 </head>
 <body>
 
     <header> 
-      <ul class="menu">
+      <ul class="menu wow fadeIn">
         <li><a href="../index.html">ИСТОРИЯ</a></li>
-        <li><a href="#">СПЕЦКОНТИНГЕНТ</a></li>
-        <li><a href="#">ПОВСЕДНЕВНОСТЬ</a></li>
-        <li><a href="#">СПИСОК</a></li>
+        <li><a href="specl.html" class="active-menu-item">СПЕЦКОНТИНГЕНТ</a></li>
+        <li><a href="daily.html">ПОВСЕДНЕВНОСТЬ</a></li>
         <li><a href="#">КОНТАКТЫ</a></li>
       </ul>
     </header>
-    <main>
-        <section id="first_container">
+    <main class = "wow fadeIn">
+        <section id="contentContainer">
             
-            <h3>СПЕЦКОНТИНГЕНТ</h3>
+            <h1> &#8729; СПЕЦКОНТИНГЕНТ &#8729; </h1>
             <div class="line">
-
             </div>
             <div class="selector">
                 <div class="image_item" onclick="choise(0)">
@@ -86,7 +85,7 @@ _ _ _
                         <h2>труд</h2>
                     </div>
                     <div class="body">
-
+                        
                     </div>
                 </div>
             </div>
@@ -94,5 +93,9 @@ _ _ _
     </main>
    
 </body>
-<script type="text/javascript" src="../scripts/js1.js"></script>
+<script src="../scripts/js1.js"></script>
+<script src="../scripts/wow.js"></script>
+<script>
+new WOW().init();
+</script>
 </html>

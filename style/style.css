@@ -113,6 +113,15 @@ h3{
     text-align: center;
 }
 
+h5{
+    color: #797979;
+    font-family: "Truth";
+    padding: 0;
+    margin: 0 0 0 34vw;
+    font-size: 3vw;
+    text-align: right;
+}
+
 
 /*
 ---------------------------------------------------------
@@ -744,24 +753,24 @@ MODAL WINDOWS - диологовые окна
 }
 
 
-
-
-.st0{
-    
-    cursor: pointer;
-    width: 2vw;
-    height: 2vw;
-    background-color: rebeccapurple;
-}
-
-svg{
-    position:absolute;
-}
-
-
 /*
-спецконтенгент верстка
+---------------------------------------------------------
+***************
+***************
+***************
+
+SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА 
+
+***************
+***************
+*************** 
+---------------------------------------------------------
 */
+
+#contentContainer{
+    width: 100%;
+}
+
 .line{
     height: 0.5vw;
     background-color: #717171;
@@ -815,4 +824,119 @@ svg{
     align-items: flex-start;
 
 }
+
+/*
+---------------------------------------------------------
+***************
+***************
+***************
+
+DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ 
+
+***************
+***************
+*************** 
+---------------------------------------------------------
+*/
+
+#tongue{
+    background-image: url(../image/logoDialog_2.svg);
+    background-size: 70% auto;
+    background-repeat: no-repeat;
+    background-position: 20% 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Oswald-Light";
+    font-size: 1.3vw;
+    margin: 2vw 0 0 0;
+    
+}
+    .contentBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin:  0 2vw 0 0 ;
+    }
+
+
+        .containerForInformation{
+            width: 38vw;
+            margin: 0 0 4vw 2vw;
+        }
+            .h5Tongue{
+                margin: -0.55vw 0 2vw -1.7vw ;
+                color: #797979;
+                font-family: "Truth";
+                padding: 0;
+                font-size: 3vw;
+                text-align: left;
+            }
+
+            audio{
+                margin: 2vw 0;
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                border-radius: 25px;
+            }
+ .song{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: center;
+     width: 100%;
+     margin: 0 auto;
+ }           
+
+ #traditions{
+    background-image: url(../image/lins.svg);
+    background-size: 60% auto;
+    background-repeat: no-repeat;
+    background-position: 90% 0.6vw;
+    height: 64vw;
+    width: 100%;
+    font-family: "Oswald-Light";
+    font-size: 1.3vw;
+    margin: 2vw 0 0 0;
+ }
+
+    #traditions>.contentBox{
+        justify-content: flex-start !important;
+    }
+
+    .traditionsItems{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 3vw 0 ;
+    }
+            .traditionList{
+                margin:  0 0 2vw 4vw ;
+                list-style: none;
+                width: 50vw;
+                height: 15vw;
+                background-color: rgba(87, 87, 87, 0.443);
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+                .imageTraditionList{
+                    padding: 0 2vw 0 0;
+                    
+                   
+                    
+                }
+                .textTraditionList{
+                    padding: 0 2vw 0 0 ;
+                }
+                    .imglist{
+                        height: 13vw;
+                        margin: 1vw;
+                        transition: 1s;
+                    }
+
+                    .imglist:hover{
+                        transform: scale(1.3);
+                    }
 
