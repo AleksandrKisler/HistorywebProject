@@ -1,11 +1,11 @@
 function openDocument(){
     console.log("hello");
     var s = document.getElementsByClassName('spravka');
-    s[0].style.height = '58vw';
+    s[0].style.height = '50vw';
     s[0].style.transition= '1.5s';
 
     var s1 = document.getElementsByClassName('spravkaMain');
-    s1[0].style.height = '50vw';
+    s1[0].style.height = '47vw';
     s1[0].style.transition= '1.5s';
     
     var img = document.getElementsByClassName('arrow_down');

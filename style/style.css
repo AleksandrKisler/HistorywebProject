@@ -804,11 +804,11 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
  }
 
 .select_body{
-    width: 72%;
+    width: 90%;
     margin: 0 auto;
-    height: 80vw;
+    height: 100%;
     font-family: "Oswald-Light";
-
+    padding: 0 0 5vw 0;
 }
  
  
@@ -817,6 +817,17 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
    
 }
 
+.fishtrud{
+    margin: 0 0 0 8vw;
+    width: 20vw;
+    border: solid 15px #333333;
+    border-radius: 25px;
+}
+.morefish{
+    margin: 0 0 0 24vw;
+    border: solid 15px #333333;
+    border-radius: 25px;
+}
 
 .select_items{
     display: flex;
@@ -825,12 +836,89 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
 
 }
 
+
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    margin: 0 0 2vw 0 ;
+    font-size: 1.3vw;
+}
+
+    .titleSpec{
+        text-align: center;
+    }
+
+    .leftSade{
+        width: 35vw;
+    }
+        .oldHome{
+            width: 30vw;
+            border: 10px solid #333333;
+            border-radius: 25px;
+        }
+
+    .rightSade{
+        width: 35vw;
+    }    
+
+    .imagebut{
+        width: 20vw;
+    }
+        .audio{
+            text-align: center;
+            margin: -2vw 0 0.5vw 0;
+            padding: 0;
+        }
+    
+    .spravca2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 60vw;
+        height: 30vw;
+        font-family: 'Kelly Slab', cursive;
+        background-image: url(../image/paper1.jpg);
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        font-size: 1vw;
+        padding: 3vw 0;
+    }
+
+        .sparavkaText{
+            margin: 0 2vw;
+        }
+        .bbbut{
+            width: 1vw;
+            margin: 0 0.5vw;
+            transition: 1s;
+        }
+        .bbbut:hover{
+            transform: scale(1.3);
+        }
+
+        .lefth2{
+            margin: 0 0 0 -10vw;
+            padding: 0;
+        }
+
+        .sparavkaBut{
+        width: 28vw;
+        height: 38vw;
+        font-family: 'Kelly Slab', cursive;
+        background-image: url(../image/paper1.jpg);
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        font-size: 1vw;
+        padding: 3vw 3vw;
+        }
 /*
 ---------------------------------------------------------
 ***************
 ***************
 ***************
-
+ 
 DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ 
 
 ***************
@@ -840,7 +928,7 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
 */
 
 #tongue{
-    background-image: url(../image/logoDialog_2.svg);
+    background-image: url(../image/logoDialog.svg);
     background-size: 70% auto;
     background-repeat: no-repeat;
     background-position: 20% 0;
@@ -963,7 +1051,7 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
 
         .spravka{
             z-index: 100;
-            font-family: 'Bad Script', cursive;
+            font-family: 'Kelly Slab', cursive;
             font-size: 1vw;
             background-image: url(../image/paper1.jpg);
             margin: 0 0 0 27vw;
@@ -1035,7 +1123,7 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
 
     .spravka1{
         z-index: 100;
-        font-family: 'Bad Script', cursive;
+        font-family: 'Kelly Slab', cursive;
         font-size: 1vw;
         background-image: url(../image/paper1.jpg);
         margin: 0 0 0 27vw;
