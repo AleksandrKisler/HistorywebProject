@@ -5,6 +5,11 @@
 	font-family: "Truth";
 	src:url("../fonts/trud/Truth.ttf");
    }
+
+   @font-face{
+	font-family: "B52";
+	src:url("../fonts/18976.ttf");
+   }
 @font-face{
     font-family: "Oswald-Light";
     src:url("../fonts/Oswald/Oswald-Light.ttf");
@@ -205,6 +210,7 @@ SECTIONS AND DIV- БЛОКИ С КОНТЕНТОМ ТАЙМЛАЙНА
                 width: 28vw;
                 z-index: 1;
                 font-size: 1.3vw;
+                text-align: justify;
             }
 
             .plusbackground{
@@ -219,7 +225,7 @@ SECTIONS AND DIV- БЛОКИ С КОНТЕНТОМ ТАЙМЛАЙНА
             .second_text{
                 margin: 0 2vw 0 0;
                 width: 28vw;
-                
+                text-align: justify;
                 font-size: 1.3vw;
             }
                 .centr{
@@ -809,6 +815,7 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
     height: 100%;
     font-family: "Oswald-Light";
     padding: 0 0 5vw 0;
+    text-align: justify;
 }
  
  
@@ -852,7 +859,7 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
     }
 
     .leftSade{
-        width: 35vw;
+        width: 30vw;
     }
         .oldHome{
             width: 30vw;
@@ -871,20 +878,22 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
             text-align: center;
             margin: -2vw 0 0.5vw 0;
             padding: 0;
+            font-size: 0.8vw;
         }
     
     .spravca2{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        width: 60vw;
-        height: 30vw;
-        font-family: 'Kelly Slab', cursive;
+        width: 30vw;
+        height: 40vw;
+        font-family: 'B52';
         background-image: url(../image/paper1.jpg);
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         font-size: 1vw;
-        padding: 3vw 0;
+        margin: 0 0 0 4vw !important;
+    
     }
 
         .sparavkaText{
@@ -907,7 +916,7 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
         .sparavkaBut{
         width: 28vw;
         height: 38vw;
-        font-family: 'Kelly Slab', cursive;
+        font-family: 'B52';
         background-image: url(../image/paper1.jpg);
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         font-size: 1vw;
@@ -949,6 +958,7 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
 
 
         .containerForInformation{
+            text-align: justify;
             width: 38vw;
             margin: 0 0 4vw 2vw;
         }
@@ -1051,7 +1061,7 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
 
         .spravka{
             z-index: 100;
-            font-family: 'Kelly Slab', cursive;
+            font-family: 'B52';
             font-size: 1vw;
             background-image: url(../image/paper1.jpg);
             margin: 0 0 0 27vw;
@@ -1062,6 +1072,7 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
             overflow: hidden; 
             display: flex;
             flex-direction: column;
+            text-align: justify;
 
         }
 
@@ -1119,16 +1130,18 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
     .leftText{
         width: 60%;
         margin: 2vw auto;
+        text-align: justify;
     }
 
     .spravka1{
+        text-align: justify;
         z-index: 100;
-        font-family: 'Kelly Slab', cursive;
+        font-family: 'B52';
         font-size: 1vw;
         background-image: url(../image/paper1.jpg);
-        margin: 0 0 0 27vw;
+        margin: 0 0 0 0;
         padding: 2vw;
-        width: 50vw;
+        width: 35vw;
         height: 20vw;
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
        

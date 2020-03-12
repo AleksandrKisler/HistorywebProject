@@ -21,7 +21,7 @@ for(i=0;i<slides.length;i++){
 }
 
 
-let text = 0;
+let text = 1;
 showBlock_1(text);
 
 function rulec(n){
@@ -40,7 +40,7 @@ if(n==slides.length){
 else{
   l[0].style.display="block"
 }
-if(n==0){
+if(n==1){
   r[0].style.display="none";
 }
 else{
