@@ -122,9 +122,9 @@ h5{
     color: #797979;
     font-family: "Truth";
     padding: 0;
-    margin: 0 0 0 34vw;
+    margin: 2vw 0;
     font-size: 3vw;
-    text-align: right;
+    text-align: center;
 }
 
 
@@ -795,6 +795,12 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
 
  .image_item_selector{
      width: 16vw;
+     transition: 1s ease-out ;
+
+ }
+
+ .image_item_selector:hover{
+     transform: scale(1.05);
  }
 
 .image_item{
@@ -825,13 +831,13 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
 }
 
 .fishtrud{
-    margin: 0 0 0 8vw;
-    width: 20vw;
+    margin: 0 0 0 6vw;
+    width: 25vw;
     border: solid 15px #333333;
     border-radius: 25px;
 }
 .morefish{
-    margin: 0 0 0 2vw;
+    margin: 0 0 0 8vw;
     border: solid 15px #333333;
     border-radius: 25px;
 }
@@ -843,6 +849,14 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
 
 }
 
+.butItem{
+    background-image: url(../image/prid.png);
+    background-position: 35% 40%;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    width: 100%;
+    height: 100%;
+}
 
 .body{
     display: flex;
@@ -854,21 +868,118 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
     font-size: 1.3vw;
 }
 
+.textBloks23{
+    width: 95%;
+    margin: 0 auto;
+}
+    .bodyPP{
+        display: flex;
+        flex-direction: column;
+    }
+    .tetxPP{
+        width: 90%;
+        margin: 0 auto;
+        text-align: justify;
+        padding: 1vw;
+        font-size: 1.8vw;
+        font: bold;
+    }
+    .chackList{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0;
+        width: 60%;
+        margin: 0 auto;
+        height: 40vw;
+    }
+        
+        .chackListItem{
+            list-style: none;
+            height: 8vw;
+            padding: 0.5vw 1vw 0.5vw 1vw;
+            background-color: #333333;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: #dbdbdb;
+            border-radius: 25px;
+            box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+        }
+        .checkitemText{
+            width: 33vw;
+        }   
+
+        .checkLisyImage{
+            width: 4vw;
+            margin: 0 1vw 0 0;
+        }
+
     .titleSpec{
-        text-align: center;
+        color: #292929;
+        font-family: "Truth";
+        padding: 0;
+        font-size: 2.5vw;
+        width: 100%;       
+        margin: 0.5vw 0;
+    }
+    .titleSpecP
+    {
+        width: 67%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: unset;
+        
     }
 
     .leftSade{
         width: 30vw;
     }
         .oldHome{
-            width: 30vw;
-            border: 10px solid #333333;
-            border-radius: 25px;
+            background-image: url(../image/oldHome.jpg);
+            background-position:  0 0;
+            background-repeat: no-repeat;
+            background-size: 100%; 
+            height: 22vw;
+            transition:  2s ease-in-out;
+        }
+        .oldHome:hover{
+            transform: scale(1.37);
+            box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            
+        }
+
+       
+        .komendatura{
+            height: 100%;
+            width: 100%;
+            background-color: #333333;
+            background-image: url(../image/tap.png);
+            background-position: center;
+            background-size: 50%;
+            background-repeat: no-repeat;
+            opacity: 0.7;
+            transition: 2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .komendatura:hover{
+            opacity: 0;   
+        }
+
+        .komend{
+            font-size: 3vw;
+            color: #dbdbdb;
+            font-family: 'B52';
         }
 
     .rightSade{
         width: 35vw;
+
     }    
 
     .imagebut{
@@ -879,6 +990,7 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
             margin: -2vw 0 0.5vw 0;
             padding: 0;
             font-size: 0.8vw;
+            
         }
     
     .spravca2{
@@ -886,8 +998,8 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        width: 30vw;
-        height: 40vw;
+        width: 35vw;
+        height: 35vw;
         font-family: 'B52';
         background-image: url(../image/paper1.jpg);
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -915,13 +1027,17 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
 
         .sparavkaBut{
         width: 28vw;
-        height: 38vw;
+        height: 30vw;
         font-family: 'B52';
         background-image: url(../image/paper1.jpg);
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         font-size: 1vw;
         padding: 3vw 3vw;
         }
+
+    .fishTextFlex{
+        width: 40vw;
+    }    
 /*
 ---------------------------------------------------------
 ***************
@@ -937,8 +1053,8 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
 */
 
 #tongue{
-    background-image: url(../image/logoDialog.svg);
-    background-size: 70% auto;
+    background-image: url(../image/longDialog.svg);
+    background-size: 75% auto;
     background-repeat: no-repeat;
     background-position: 20% 0;
     height: 100%;
@@ -963,7 +1079,7 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
             margin: 0 0 4vw 2vw;
         }
             .h5Tongue{
-                margin: -0.55vw 0 2vw -1.7vw ;
+                margin: -0.25vw 0 2vw 5vw ;
                 color: #797979;
                 font-family: "Truth";
                 padding: 0;
@@ -986,11 +1102,8 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
  }           
 
  #traditions{
-    background-image: url(../image/lins.svg);
-    background-size: 60% auto;
-    background-repeat: no-repeat;
-    background-position: 90% 0.6vw;
-    height: 64vw;
+   
+    height: 30vw;
     width: 100%;
     font-family: "Oswald-Light";
     font-size: 1.3vw;
@@ -1003,24 +1116,33 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
 
     .traditionsItems{
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 3vw 0 ;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0vw 0 ;
     }
             .traditionList{
-                margin:  0 0 2vw 4vw ;
-                list-style: none;
-                width: 50vw;
-                height: 15vw;
-                background-color: rgba(87, 87, 87, 0.443);
+               display: flex;
+               flex-direction: row;
+               justify-content: space-around;
+               width: 100%;
+               
+            }
+            .traditionsList{
                 display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                align-items: center;
+               flex-direction: row;
+               justify-content: space-around;
+               width: 80vw;
+            }
+
+            .traditionsListItem{
+                background-color: #333333;
+                height: 23vw;
+                width: 23vw;
             }
 
                 .imageTraditionList{
-                    padding: 0 2vw 0 0;
+                    padding: 0 0 0 0;
                     
                    
                     
@@ -1042,13 +1164,13 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
     background-image: url(../image/nastroenie_3.svg);
     background-size: 47% auto;
     background-repeat: no-repeat;
-    background-position: 5% 0.6vw;
+    background-position: 3% 0vw;
     height: 100%;
     width: 100%;
     font-family: "Oswald-Light";
     font-size: 1.3vw;
     margin: 2vw 0 0 0;
-    padding: 0 0 8vw 0;
+    padding: 1vw 0 8vw 0;
 }
     .h6Tongue{
         margin: 0vw 0 2vw -6.5vw ;
