@@ -1057,7 +1057,7 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
     background-size: 75% auto;
     background-repeat: no-repeat;
     background-position: 20% 0;
-    height: 100%;
+    height: 55vw;
     width: 100%;
     font-family: "Oswald-Light";
     font-size: 1.3vw;
@@ -1097,17 +1097,20 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
      flex-direction: row;
      justify-content: space-evenly;
      align-items: center;
-     width: 100%;
+     width: 30%;
      margin: 0 auto;
  }           
 
+    .songValoe{
+        width: 4vw;
+    }
  #traditions{
    
     height: 30vw;
     width: 100%;
     font-family: "Oswald-Light";
     font-size: 1.3vw;
-    margin: 2vw 0 0 0;
+    margin: 2vw 0 ;
  }
 
     #traditions>.contentBox{
@@ -1136,10 +1139,52 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
             }
 
             .traditionsListItem{
-                background-color: #333333;
                 height: 23vw;
                 width: 23vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: justify;
+                padding:0 1vw;
+                color: #dbdbdb;
             }
+
+                .svadba{
+                    background-image: url(../image/merreg.png);
+                    background-position: center;
+                    background-size: 110%;
+
+                }
+
+                .religia{
+                    background-image: url(../image/biblia.png);
+                    background-position: center;
+                    background-size: 110%;
+                    background-repeat: no-repeat;
+                    transition: 2s ease;
+                    
+                }
+
+                .religia:hover{
+                    transform: scale(1.2);
+                }
+
+                .traditionsListItemText{
+                    transition: 2s ease;
+                    width: 100%;
+                    height: 10vw;
+                }
+
+                .traditionsListItemText:hover{
+                    opacity: 0;
+                }
+
+                .kuhnia{
+                    background-image: url(../image/kuhen.png);
+                    background-position: center;
+                    background-size: 100%;
+                }
 
                 .imageTraditionList{
                     padding: 0 0 0 0;
