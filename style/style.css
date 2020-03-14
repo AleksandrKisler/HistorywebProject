@@ -119,10 +119,10 @@ h3{
 }
 
 h5{
-    color: #797979;
+    color: #333333;
     font-family: "Truth";
     padding: 0;
-    margin: 2vw 0;
+    margin:  0;
     font-size: 3vw;
     text-align: center;
 }
@@ -850,8 +850,8 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
 }
 
 .butItem{
-    background-image: url(../image/prid.png);
-    background-position: 35% 40%;
+    background-image: url(../image/prialka.png);
+    background-position: 50% center;
     background-repeat: no-repeat;
     background-size: 20%;
     width: 100%;
@@ -881,7 +881,7 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
         margin: 0 auto;
         text-align: justify;
         padding: 1vw;
-        font-size: 1.8vw;
+        font-size: 1.4vw;
         font: bold;
     }
     .chackList{
@@ -1053,10 +1053,10 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
 */
 
 #tongue{
-    background-image: url(../image/longDialog.svg);
-    background-size: 75% auto;
+    background-image: url(../image/leftimage_1.svg);
+    background-size: 20% auto;
     background-repeat: no-repeat;
-    background-position: 20% 0;
+    background-position: 0 center;
     height: 55vw;
     width: 100%;
     font-family: "Oswald-Light";
@@ -1067,7 +1067,7 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
     .contentBox{
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         margin:  0 2vw 0 0 ;
     }
@@ -1075,12 +1075,12 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
 
         .containerForInformation{
             text-align: justify;
-            width: 38vw;
-            margin: 0 0 4vw 2vw;
+            width: 40vw;
+            margin: 0;
         }
             .h5Tongue{
-                margin: -0.25vw 0 2vw 5vw ;
-                color: #797979;
+                margin: 0;
+                color: #333333;
                 font-family: "Truth";
                 padding: 0;
                 font-size: 3vw;
@@ -1091,13 +1091,15 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
                 margin: 2vw 0;
                 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
                 border-radius: 25px;
+                width: 15vw ;
+                height: 3vw;
             }
  .song{
      display: flex;
      flex-direction: row;
      justify-content: space-evenly;
      align-items: center;
-     width: 30%;
+     width: 70%;
      margin: 0 auto;
  }           
 
@@ -1105,12 +1107,16 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
         width: 4vw;
     }
  #traditions{
-   
+    background-image: url(../image/tradic.svg);
+    background-position:100% 0;
+    background-repeat: no-repeat;
+    background-size: 25% ;
     height: 30vw;
     width: 100%;
     font-family: "Oswald-Light";
     font-size: 1.3vw;
-    margin: 2vw 0 ;
+    margin: 0 ;
+    padding: 1.5vw 0 ;
  }
 
     #traditions>.contentBox{
@@ -1122,7 +1128,7 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
-        padding: 0vw 0 ;
+        
     }
             .traditionList{
                display: flex;
@@ -1146,21 +1152,28 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
                 justify-content: center;
                 align-items: center;
                 text-align: justify;
-                padding:0 1vw;
+                padding:0;
                 color: #dbdbdb;
             }
 
                 .svadba{
                     background-image: url(../image/merreg.png);
                     background-position: center;
-                    background-size: 110%;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    transition: 2s ease;
+                    
+                    
+                }
 
+                .svadba:hover{
+                    transform: scale(1.2);
                 }
 
                 .religia{
                     background-image: url(../image/biblia.png);
                     background-position: center;
-                    background-size: 110%;
+                    background-size: 100%;
                     background-repeat: no-repeat;
                     transition: 2s ease;
                     
@@ -1172,18 +1185,33 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
 
                 .traditionsListItemText{
                     transition: 2s ease;
+                    opacity: 0;
                     width: 100%;
-                    height: 10vw;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: justify;
+                    background-color: #333333;
+                    padding: 0 2vw;
                 }
 
                 .traditionsListItemText:hover{
-                    opacity: 0;
+                    opacity: 1;
                 }
 
                 .kuhnia{
                     background-image: url(../image/kuhen.png);
                     background-position: center;
                     background-size: 100%;
+                    background-repeat: no-repeat;
+                    transition: 2s ease;
+                    
+                }
+
+                .kuhnia:hover{
+                    transform: scale(1.2);
                 }
 
                 .imageTraditionList{
@@ -1206,10 +1234,10 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
                     }
 
 #nastroenie{
-    background-image: url(../image/nastroenie_3.svg);
+    background-image: url(../image/nastr.svg);
     background-size: 47% auto;
     background-repeat: no-repeat;
-    background-position: 3% 0vw;
+    background-position: 0 0;
     height: 100%;
     width: 100%;
     font-family: "Oswald-Light";
@@ -1217,6 +1245,12 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
     margin: 2vw 0 0 0;
     padding: 1vw 0 8vw 0;
 }
+
+    .nastr_text{
+        width: 100%;
+        height: 100%;
+        margin: 8vw 0 5vw 14vw;
+    }
     .h6Tongue{
         margin: 0vw 0 2vw -6.5vw ;
                 color: #797979;
@@ -1306,9 +1340,9 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
         font-family: 'B52';
         font-size: 1vw;
         background-image: url(../image/paper1.jpg);
-        margin: 0 0 0 0;
+        margin: 0 auto;
         padding: 2vw;
-        width: 35vw;
+        width: 40%;
         height: 20vw;
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
        
