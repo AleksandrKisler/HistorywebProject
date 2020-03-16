@@ -71,11 +71,11 @@ MENU
     transition: 0.5s;
 }
 .active-menu-item{
-    text-shadow: -2px 3px 1px #717171;
+    text-shadow: -2px 3px 1px #f15a24;
 }
 
 .menu>li>a:hover{
-    text-shadow: -2px 3px 1px #717171;
+    text-shadow: -2px 3px 1px #f15a24;
 }
 
 main{
@@ -851,7 +851,7 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
 
 .butItem{
     background-image: url(../image/prialka.png);
-    background-position: 50% center;
+    background-position: 45% center;
     background-repeat: no-repeat;
     background-size: 20%;
     width: 100%;
@@ -926,10 +926,10 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
     }
     .titleSpecP
     {
-        width: 67%;
-        padding: 0;
-        margin: 0 auto;
-        text-align: unset;
+        width: 80%;
+        padding: 0  ;
+        margin: 0 auto   ;
+        text-align: center;
         
     }
 
@@ -967,7 +967,7 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
             justify-content: center;
         }
 
-        .komendatura:hover{
+        .komendatura:hover{   
             opacity: 0;   
         }
 
@@ -987,10 +987,18 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
     }
         .audio{
             text-align: center;
-            margin: -2vw 0 0.5vw 0;
+            margin: 0vw 0 1vw 0;
             padding: 0;
             font-size: 0.8vw;
-            
+        }
+        .audioName{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 75%;
+            margin:  0 auto;
+            height: 100%;
+            font-size: 0.8vw;
         }
     
     .spravca2{
@@ -1038,6 +1046,21 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
     .fishTextFlex{
         width: 40vw;
     }    
+
+    .graphik{
+        width: 30vw;
+        padding: 2vw 0;
+        transition: 2s ease;
+    }
+
+    .graphik:hover{
+        transform: scale(1.8);
+    }
+
+    .trudSS{
+        height: 35vw;
+        width: 35vw;
+    }
 /*
 ---------------------------------------------------------
 ***************
@@ -1086,9 +1109,14 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
                 font-size: 3vw;
                 text-align: left;
             }
+        
+            .audioSound{
+                padding: 0;
+                margin: 0 0 0.5vw 1vw;
+            }
 
             audio{
-                margin: 2vw 0;
+                margin: 2vw 0 0 0;
                 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
                 border-radius: 25px;
                 width: 15vw ;
@@ -1111,7 +1139,7 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
     background-position:100% 0;
     background-repeat: no-repeat;
     background-size: 25% ;
-    height: 30vw;
+    height: 25vw;
     width: 100%;
     font-family: "Oswald-Light";
     font-size: 1.3vw;
@@ -1173,7 +1201,7 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
                 .religia{
                     background-image: url(../image/biblia.png);
                     background-position: center;
-                    background-size: 100%;
+                    background-size: 103%;
                     background-repeat: no-repeat;
                     transition: 2s ease;
                     
@@ -1234,15 +1262,14 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
                     }
 
 #nastroenie{
-    background-image: url(../image/nastr.svg);
-    background-size: 47% auto;
+    background-image: url(../image/leftArrow.svg);
+    background-size: 22% auto;
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 0 25%;
     height: 100%;
     width: 100%;
     font-family: "Oswald-Light";
     font-size: 1.3vw;
-    margin: 2vw 0 0 0;
     padding: 1vw 0 8vw 0;
 }
 
@@ -1265,7 +1292,7 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
             font-family: 'B52';
             font-size: 1vw;
             background-image: url(../image/paper1.jpg);
-            margin: 0 0 0 27vw;
+            margin: 2vw 0 2vw 14vw;
             padding: 2vw;
             width: 50vw;
             height: 30vw;
@@ -1340,10 +1367,10 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
         font-family: 'B52';
         font-size: 1vw;
         background-image: url(../image/paper1.jpg);
-        margin: 0 auto;
+        margin:  2vw 0 0 18%;
         padding: 2vw;
         width: 40%;
-        height: 20vw;
+        height: 26vw;
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
        
         

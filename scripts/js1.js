@@ -11,18 +11,7 @@ var i;
 var slides = document.getElementsByClassName("select_items");
 var slides_image = document.getElementsByClassName("marker");
 var h = document.getElementsByClassName("titleSpecP");
-if(n==0){
-  h[n].style.textAlign="left";
-  h[n].className += " animated fadeIn";
-}
-if(n==1){
-  h[n].style.textAlign="center";
-  h[n].className += " animated fadeIn";
-}
-if(n==2){
-  h[n].style.textAlign="right";
-  h[n].className += " animated fadeIn";
-}
+
 for(i=0;i<slides.length;i++){
   slides_image[i].style.display="none";
   slides[i].style.display="none";
