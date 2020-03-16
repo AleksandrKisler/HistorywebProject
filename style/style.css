@@ -1419,6 +1419,7 @@ Contacts - ВЕРСТКА контакты
         text-align: center;
         font-size: 1.1vw;
         padding: 1vw 0;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
 
     .contacts_image{
@@ -1442,6 +1443,7 @@ Contacts - ВЕРСТКА контакты
         text-align: center;
         padding: 2vw 1vw;
         font-size: 1.4vw;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         
     }
 
