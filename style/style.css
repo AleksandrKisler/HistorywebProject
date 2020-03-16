@@ -362,6 +362,13 @@ SECTIONS AND DIV- БЛОКИ С КОНТЕНТОМ ТАЙМЛАЙНА
     
     footer{
         grid-area: footer;
+        font-family: "Oswald-Light";
+        width: 50%;
+        margin:0 auto;
+        height: 100%;
+        font-size: 1.1vw;
+        text-align: center;
+        padding: 5vw 0 0 0;
     }
     
 /*
@@ -1376,3 +1383,75 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
         
 
     }
+/*
+---------------------------------------------------------
+***************
+***************
+***************
+
+Contacts - ВЕРСТКА контакты 
+
+***************
+***************
+*************** 
+---------------------------------------------------------
+*/
+.cintactsBox{
+    width: 70%;
+    height: 100%;
+    margin: 0vw auto 2vw auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    .infoItems{
+        width: 20%;
+        height: 10vw;
+        background: #333333;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #dbdbdb;
+        font-family: "Oswald-Light";
+        text-align: center;
+        font-size: 1.1vw;
+        padding: 1vw 0;
+    }
+
+    .contacts_image{
+        width: 5vw;
+    }
+
+    .cintactsBoxColumn{
+        font-family: "Oswald-Light";
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+        height: 20vw;
+    }
+
+    .contactItem{
+        color: #dbdbdb;
+        background-color: #333333;
+        width: 100%;
+        text-align: center;
+        padding: 2vw 1vw;
+        font-size: 1.4vw;
+        
+    }
+
+    .contacts_text{
+        font-family: "Oswald-Light";
+        width: 55%;
+        margin:0 auto 4vw auto;
+        height: 100%;
+        font-size: 1.1vw;
+        text-align: center;
+        
+    }
+
