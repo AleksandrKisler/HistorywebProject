@@ -538,6 +538,10 @@ IMG - стили для изображений
    
 }
 
+.map{
+    width: 70vw;
+}
+
 .accp{
     opacity: 0.8;
     width: 25vw;
