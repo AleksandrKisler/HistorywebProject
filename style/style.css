@@ -862,7 +862,7 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
 
 .butItem{
     background-image: url(../image/prialka.png);
-    background-position: 45% center;
+    background-position: 20% center;
     background-repeat: no-repeat;
     background-size: 20%;
     width: 100%;
@@ -1411,6 +1411,32 @@ DAILY - ВЕРСТКА ПОВСЕДНЕВНОСТЬ
         
 
     }
+
+    .duble_body{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .image_slovar_specperecelenca{
+        width: 20vw;
+        cursor: pointer;
+        transition: ease-out 1s;
+    }
+
+    .image_slovar_specperecelenca:hover{
+        width: 22vw;
+        padding: 3vw 2vw;
+        background-color: #333333;
+    }
+    .slovar_specperecelenca{
+        margin: 0 0 0 2vw;
+        
+    }
+
+
+
 /*
 ---------------------------------------------------------
 ***************
@@ -1485,3 +1511,14 @@ Contacts - ВЕРСТКА контакты
         
     }
 
+.game{
+        width: 100%;
+        height: 35vw;
+}
+
+#frame{
+    width: 80%;
+    margin: 0 auto;
+    height: 35vw;
+    zoom: %;
+}

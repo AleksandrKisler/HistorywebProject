@@ -1,5 +1,4 @@
 function openDocument(){
-    console.log("hello");
     var s = document.getElementsByClassName('spravka');
     s[0].style.height = '50vw';
     s[0].style.transition= '1.5s';
@@ -36,3 +35,16 @@ function openDocument(){
 
 
 
+ 
+
+var ModelButton =document.getElementsByClassName("");
+var ModelWindow = document.getElementById("modelWindowForFishMap");
+var close=document.getElementsByClassName("modelWindowForFishMapClose");
+
+function openGame(){
+    ModelWindow.style.display="block";
+}
+
+function closeGame(){
+  ModelWindow.style.display="none";
+}
