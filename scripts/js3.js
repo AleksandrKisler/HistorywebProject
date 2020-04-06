@@ -28,3 +28,15 @@ function showSlides_2(n) {
   slides[slideIndex_2-1].className += " animated fadeIn";   
   dots[slideIndex_2-1].className += " active";
 }
+
+var ModelButton_h =document.getElementsByClassName("button_forNAseleniaMap");
+var ModelWindow_h = document.getElementById("modalWindowForPopulationMap");
+var close_h=document.getElementsByClassName("modelWindowForPopulationMapClose");
+
+function openWindowPopulationMap(){
+    ModelWindow_h.style.display="block";
+}
+
+function closePopulationMap(){
+  ModelWindow_h.style.display="none";
+}

@@ -95,13 +95,13 @@ function poointsScors(n,c){
             change[16].style.display="none";
             change[17].style.display="flex";
             if(score>=60 && score<=90){
-                document.getElementById("result").innerHTML = "ваши представления о прошлом отличаются наивностью и оптимизмом. Возможно, вам стоит повнимательнее почитать информацию на нашем сайте и пообщаться со своими пожилыми родственниками.";
+                document.getElementById("result").innerHTML = "Ваши представления о прошлом отличаются излишним оптимизмом. Возможно, вам стоит повнимательнее почитать информацию на нашем сайте и пообщаться со своими пожилыми родственниками.";
             }
             else if(score>=25 && score<=55){
-                document.getElementById("result").innerHTML = "вы очень хорошо ориентируетесь в реалиях жизни спецпоселения!";
+                document.getElementById("result").innerHTML = "Вы очень хорошо ориентируетесь в реалиях жизни спецпоселения!";
             }
             else if(score<=20){
-                document.getElementById("result").innerHTML = "чем ниже ваш балл (особенно, чем ниже нуля), тем негативнее ваше представление о прошлом. Но истина всегда где-то посередине.";
+                document.getElementById("result").innerHTML = "Ваши представления о прошлом слишком негативны. Помните, что истина всегда где-то посередине. Информация на нашем сайте поможет вам составить более реалистичный образ жизни в спецпоселке.";
             }
         }
         document.getElementById("result1").innerHTML = score;

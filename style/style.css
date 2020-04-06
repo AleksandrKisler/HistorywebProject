@@ -10,10 +10,10 @@
 	font-family: "B52";
 	src:url("../fonts/18976.ttf");
    }
-@font-face{
-    font-family: "Oswald-Light";
-    src:url("../fonts/Oswald/Oswald-Light.ttf");
-}
+    @font-face{
+        font-family: "Oswald-Light";
+        src:url("../fonts/Oswald/Oswald-Light.ttf");
+    }
 
 div{
     box-sizing: border-box;
@@ -1035,7 +1035,7 @@ SPECL - ВЕРСТКА СПЕЦКОНТИНГЕНТА
         background-image: url(../image/paper1.jpg);
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         font-size: 1vw;
-        margin: 0 0 0 2vw !important;
+        margin: 5vw 0 5vw 2vw !important;
     
     }
 
@@ -1551,5 +1551,168 @@ Contacts - ВЕРСТКА контакты
     width: 80%;
     margin: 0 auto;
     height: 35vw;
-    zoom: %;
+    
 }
+
+.son{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.son1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vw !important;
+}
+
+.game_box{
+    height: 52vw;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-color: #dbdbdb;
+    
+}
+
+.game_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+.game_items1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.question{
+    height: 9vw;
+    width: 100%;
+    text-align: justify;
+    padding: 0 ;
+}
+
+.text_{
+    margin: 1vw 2vw;
+    font-family: "Oswald-Light";
+    font-size: 1.45vw;
+    text-align: justify;
+}
+
+.answers{
+    height: 18vw;
+    width: 100%;
+}
+
+.start_test{
+    width: 100%;
+    height: 100%;
+}
+
+.answer_item{
+    width: 80%;
+    padding: 1vw 1vw;
+    margin: 0.6vw auto;
+    text-align: left;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    background-color: #979797;
+    list-style: none;
+    font-family: "Oswald-Light";
+}
+.answer_item:hover{
+    background-color: honeydew;
+}
+.false{
+    background-color: indianred !important;
+}
+
+.true{
+    background-color: honeydew !important;
+}
+
+.comment{
+    width: 100%;
+    height: 25vw;
+    text-align: justify;
+    padding: 0 0 2vw 0;
+    
+}
+
+.text1_{
+    padding: 0 2vw;
+    margin:  1vw 0;
+    font-family: "Oswald-Light";
+    font-size: 1.2vw;
+}
+
+.start{
+    width: 20vw;
+    height: 5vw;
+    transition: ease-in-out 0.5s;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border: 0.1px solid #777777;
+    background-color: #979797;
+    font-family: "Truth";
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.start:hover{
+    box-shadow: none;
+}
+
+
+.thegame{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.thebuttonGame{
+    margin: 1vw 0 0 0;
+    width: 12vw;
+    height: 3vw;
+    transition: ease-in-out 0.5s;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border: 0.1px solid #777777;
+    background-color: #979797;
+    font-family: "Truth";
+    font-size: 1.5vw;
+    cursor: pointer;
+    padding: 1vw;
+    text-align: center;
+}
+.thebuttonGame:hover{
+    box-shadow: none;
+}
+
+#result{
+    font-family: "Oswald-Light";
+    font-size: 1.4vw;
+    text-align: justify;
+    width: 50%;
+    margin: 0 auto
+}
+
+#result1{
+    font-family: "Oswald-Light";
+    font-size: 5vw;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto
+}
+

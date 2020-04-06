@@ -134,9 +134,6 @@ function closePopulationMap(){
   ModelWindow_h.style.display="none";
 }
 
-function s(){
-  console.log(1);
-}
 
 
 
