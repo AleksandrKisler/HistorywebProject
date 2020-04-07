@@ -55,4 +55,43 @@ for(i=0;i<slides.length;i++){
       slides[text-1].className += " animated fadeIn";  
       slides[text-1].style.display="block"; 
 }
-     
+ 
+
+ var spravka = 1;
+ showSpravka(spravka);
+ 
+ function spvk(x){
+   showSpravka(spravka += x);
+ }
+
+ function showSpravka(x){
+   console.log(" logs : "+x);
+   var item = document.getElementsByClassName("trudSS");
+   var left = document.getElementsByClassName("slider_trudSS_Left");
+   var right = document.getElementsByClassName("slider_trudSS_Right"); 
+
+
+   for (let index = 0; index < item.length; index++) {
+        item[index].style.display="none";
+   }
+   console.log(" items : "+item.length);
+   if(x==1){
+    left[0].style.display="none"
+  }
+  else{
+    left[0].style.display="block"
+  }
+  if(x==item.length){
+    right[0].style.display="none";
+  }
+  else{
+    right[0].style.display="block";
+  }
+
+   if (x > item.length) {spravka = item.length;}
+   if (x < 1) {spravka = 1;}
+   item[spravka-1].className += " animated fadeIn";  
+   item[spravka-1].style.display="block"; 
+   
+
+ }

@@ -1716,3 +1716,10 @@ Contacts - ВЕРСТКА контакты
     margin: 0 auto
 }
 
+
+.slider_trudSS{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
